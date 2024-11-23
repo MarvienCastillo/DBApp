@@ -1,0 +1,95 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Nov 17, 2024, 6:40:16 PM
+    Author     : Joshua Lim
+*/
+
+        body {
+            background-image: url('images/image1.png'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Oswald', sans-serif;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container for the content */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: rgba(0, 0, 0, 0.6); 
+            padding: 20px;
+        }
+
+        /* Header styling */
+        h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        
+        .nav-links {
+            list-style-type: none; 
+            padding: 0;            
+            margin: 0;             
+        }
+
+        /* Styling for the navigation container */
+        .nav-links li {
+            margin: 20px 0;  
+        }
+
+        /* Styling for the large text buttons */
+        .nav-links a {
+            color: transparent;
+            text-decoration: none;
+            font-size: 2em; /* Larger font size */
+            text-transform: uppercase; /* Uppercase text like the image */
+            padding: 10px 20px;
+            border: 4px solid #fff; /* Thicker border for bold appearance */
+            position: relative;
+            display: inline-block;
+            transition: all 0.4s ease-in-out;
+            letter-spacing: 2px;
+            -webkit-text-stroke: 1px #fff; /* Outline effect for text */
+        }
+
+        /* Adding a hover effect with filled background */
+        .nav-links a::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            z-index: -1; /* Place behind the text */
+            transform: scaleY(0);
+            transform-origin: bottom;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .nav-links a:hover::before {
+            transform: scaleY(1); /* Expands background on hover */
+        }
+
+        .nav-links a:hover {
+            color: #fff; /* Changes text color to match the background on hover */
+            -webkit-text-stroke: 0; /* Removes the outline on hover */
+        }
+        

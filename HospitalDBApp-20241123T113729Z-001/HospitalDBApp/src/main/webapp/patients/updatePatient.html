@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Patient</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Update Patient</h1>
+        <form action="updatePatient.jsp" method="post">
+            <label for="patientId">Patient ID:</label>
+            <input type="number" id="patientId" name="patientId" required>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+
+            <label for="dateOfBirth">Date of Birth (YYYY-MM-DD):</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="">Select Gender</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+
+            <label for="phoneNum">Phone Number:</label>
+            <input type="tel" id="phoneNum" name="phoneNum">
+
+            <input type="submit" value="Update Patient">
+        </form>
+    </div>
+</body>
+</html>
